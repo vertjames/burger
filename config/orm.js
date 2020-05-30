@@ -1,11 +1,26 @@
-const connection = require("./connection")
+const connection = require("./connection");
 
 const orm = {
-  selectAll()
+  selectAll(table, cb) {
+    connection.query(`SELECT * from ${table}`, (err, data) => {
+      if (err) throw err
+      cb(data)
+    })
+  },
 
-  insertOne()
+  insertOne(table, changes, values, cb) {
+    connection.query(`INSERT INTO ${table} (${changes}) VALUE ("${values}")`, (err, info) => {
+      if (err) throw err
+      cb(info)
+    })
+  },
 
-  updateOne()
+  updateOne(table, changes, where, cb) {
+    connection.query(`UPDATE ${table} SET ${changes} WHERE ${where}`, (err, info) => {
+      if (err) throw err
+      cb(info)
+    })
+  }
 }
 
 module.exports = orm

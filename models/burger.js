@@ -7,7 +7,7 @@ const burger = {
   insertOne()
 
   updateOne()
-  
+
 }
 
 module.exports = burger

@@ -1,11 +1,3 @@
 const mysql = require('mysql2')
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  port: 3306,
-  user: 'root',
-  password: 'rootroot',
-  database: 'burgers_db'
-})
-
-module.exports = connection
+module.exports = mysql.createConnection('mysql://root:rootroot@localhost:3306/burgers_db')

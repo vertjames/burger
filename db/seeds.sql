@@ -1,4 +1,4 @@
 USE burgers_db;
 
-INSERT INTO burgers (burger_name, devoured)
-VALUES ('Single Decker Plant-Based Burger', false), ('All The Meats Burger', false), ('The Blood Bath Burger', true);
+INSERT INTO burgers (name)
+VALUES ('Single Decker Plant-Based Burger'), ('All The Meats Burger'), ('The Blood Bath Burger');
