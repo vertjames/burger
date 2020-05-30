@@ -17,7 +17,7 @@
   
   <a name="usage"></a>
   ## Usage
-  Enter 'node server.js' into the CLI then go to 'http://localhost:3000/' in a browser, or visit the app live <a href='https://herokuLink'>right here</a> to start logging some burgers!
+  Enter 'node server.js' into the CLI then go to 'http://localhost:3000/' in a browser, or visit the app live <a href='https://fierce-meadow-17870.herokuapp.com'>right here</a> to start logging some burgers!
 
   <a name="license"></a>
   ## License
